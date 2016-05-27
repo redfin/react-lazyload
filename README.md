@@ -45,7 +45,7 @@ const App = React.createClass({
                                    if you're concerned about improving performance */
           <MyComponent />
         </LazyLoad>
-        <LazyLoad height={200} offset={100}> 
+        <LazyLoad height={200} offset={100}>
                                 /* This component will be loaded when it's top
                                    edge is 100px from viewport. It's useful to
                                    make user ignorant about lazy load effect. */
@@ -101,7 +101,7 @@ Once the lazy loaded component is loaded, do not detect scroll/resize event anym
 
 Type: Number/Array(Number) Default: 0
 
-Say if you want to preload a module even if it's 100px below the viewport (user have to scroll 100px more to see this module), you can set `offset` props to `100`. On the other hand, if you want to delay loading a module even if it's top edge has already appeared at viewport, set `offset` props to negative number will make it delay loading.
+Say if you want to preload a component even if it's 100px below the viewport (user have to scroll 100px more to see this component), you can set `offset` props to `100`. On the other hand, if you want to delay loading a component even if it's top edge has already appeared at viewport, set `offset` to negative number.
 
 If you provide this props with array like `[200, 200]`, it will set top edge offset and bottom edge offset respectively.
 
@@ -170,6 +170,7 @@ Using `LazyLoad` component will help ease this situation by only update componen
 ## Contributors
 
 1. [lancehub](https://github.com/lancehub)
+2. [doug-wade](https://github.com/doug-wade)
 
 
 ## License
